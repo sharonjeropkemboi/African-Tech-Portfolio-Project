@@ -1,0 +1,185 @@
+body {
+    overflow-y: scroll;
+    font-family: 'Gabriela', sans-serif;
+    background-color: rgb(15, 15, 15);
+  }
+  
+  .navbar .container {
+    margin-left: 10px;
+  }
+  
+  /* Set bg Image */
+  .bgImage {
+    height: 100vh;
+    background: url("https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&w=1000&q=80");
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Make text larger*/
+  /* title */
+  .hero_title {
+    font-size: 4rem;
+  }
+  
+  /* desc */
+  .hero_desc {
+    font-size: 1.5rem;
+  }
+  
+  .container-fluid {
+    color: rgb(19, 229, 236);
+    margin-left: 20vw;
+    display: inline;
+  
+  }
+  
+  .hero_text {
+    text-align: center;
+    position: inherit;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, 50%) !important;
+  }
+  
+  .img-fluid {
+    height: 550px;
+    width: 450px;
+    position: absolute;
+    top: 20%;
+    left: 65%;
+  }
+  
+  #desc {
+    margin-left: 20px;
+  }
+  
+  /* Remove deafults  */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 5em !important;
+    color: blanchedalmond;
+  }
+ 
+  /* ABOUT SECTION  */
+/* this is where we left off, implementing text shadow in about section title */
+/* .about-title {
+  text-shadow: 5px 5px;
+} */
+
+.about-img {
+    width: 70%;
+    float: right;
+    border-radius: 50%;
+    box-shadow: 0 0 10px;
+    /* border: 10px solid rgb(128, 128, 128, 0.9); */
+    
+  }
+  
+  .about-img:hover {
+    border: 5px solid grey;
+  }
+  
+  .view-portfolio{
+    position: relative;
+    left: 150px;
+    top: 50px;
+  }
+  .col p{
+      color: rgb(252, 251, 249);
+  }
+  /* End of About Section */
+  
+  
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    body {
+      overflow-y: scroll;
+    }
+  
+    .img-fluid {
+      height: 200px;
+      width: 150px;
+      position: absolute;
+      top: 20%;
+      left: 35%;
+    }
+  
+    .hero_title {
+      font-size: 2.5rem;
+    }
+  
+    .hero-text {
+      margin-top: 10em;
+      top: 50%;
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    body {
+      overflow-y: scroll;
+    }
+  
+    .img-fluid {
+      height: 250px;
+      width: 200px;
+      position: absolute;
+      top: 20%;
+      left: 35%;
+    }
+  
+    .hero_desc {
+      font-size: 1rem;
+    }
+  
+    .hero-text {
+      margin-top: 10em;
+      top: 50%;
+    }
+  
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    body {
+      overflow-y: scroll;
+    }
+  
+    .img-fluid {
+      height: 250px;
+      width: 200px;
+      position: absolute;
+      top: 20%;
+      left: 35%;
+    }
+  
+    .hero_desc {
+      font-size: 1rem;
+    }
+  
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .img-fluid {
+      height: 550px;
+      width: 400px;
+      position: absolute;
+      top: 20%;
+      left: 65%;
+    }
+  
+    .hero_desc {
+      font-size: 2rem;
+    }
+  
+    .hero-text {
+      margin-top: 0.1em;
+      /* top: 50%; */
+    }}
