@@ -61,51 +61,73 @@
         <!-- Banner End -->
     
         <!-- About section start -->
-        <section class="container about-me"  >
-            <h1 class="about-title" id="textbox" style="color: chocolate;">About Me</h1>
-            <div class="container row">
-                <div class="col">
-                    <p>A Business Analyst whose entrepreneurial instincts and clarity of vision have carried multiple companies through rapid and continuous growth. I'm distinguished by my passion for business, my focus on collaborative team-building, and my commitment to meeting customer and market demands. 
-                        I have been successful at responding to shifting business needs and priorities in a systematic and effective way. I'm Well-versed in implementation of operational assessments and conducting functional requirements analysis for businesses of all sizes. 
-                        Being a quantitative expert with exceptional speed in analysis of quarterly and annual reports and providing comprehensive syntheses, I have been able to achieve outstanding personal and team results. I find my greatest motivation in coaching others to perform above and beyond expectations.
-                        My expertise spans a wide range of business and IT solutions. I'm a charismatic and enthusiastic person 
-                        Passion and diligence are two traits that I believe most reflect me as an individual..</p>
-                    
-                    <div class="row mb-3" >
-                        
-                        <div class="col sm-6">
-                            <h4><strong>Name: </strong>Sharonne Kemboi</h4>
-                        </div>
-                        <div class="col sm-6">
-                            <h4><strong>Birthday: </strong>25th August, 1996</h4>
-                        </div>
-                        <div class="col sm-6">
-                            <h4><strong>Experience: </strong>3 years</h4>
-                        </div>
-                        <div class="col sm-6">
-                            <h4><strong>Phone: </strong><a href="tel:+254727004321">+254727 004 321</a></h4>
-                        </div>
-                        <div class="col sm-6">
-                            <h4><strong>Email: </strong><a href="mailto:sharonnekay23@gmail.com">sharonnekay23@gmail.com</a></h4>
-                        </div>
-                        <div class="col sm-6">
-                            <h4><strong>Cloud and Data Analysis Work: </strong>Available</h4>
-                        </div>
-                    </div>
+        <section class="container about-me"  id="about"  >
+            <div class="card text-center text-light" style="background-color:rgb(11, 78, 87) ;">
+                <div class="card-header">
+                  About Me
                 </div>
-                <div class="col">
+                <div class="card-body">
+                  <p class="card-text">A Business Analyst whose entrepreneurial instincts and clarity of vision have carried multiple companies through rapid and continuous growth. I'm distinguished by my passion for business, my focus on collaborative team-building, and my commitment to meeting customer and market demands. 
+                    I have been successful at responding to shifting business needs and priorities in a systematic and effective way. I'm Well-versed in implementation of operational assessments and conducting functional requirements analysis for businesses of all sizes. 
+                    Being a quantitative expert with exceptional speed in analysis of quarterly and annual reports and providing comprehensive syntheses, I have been able to achieve outstanding personal and team results. I find my greatest motivation in coaching others to perform above and beyond expectations.
+                    My expertise spans a wide range of business and IT solutions. I'm a charismatic and enthusiastic person 
+                    Passion and diligence are two traits that I believe most reflect me as an individual..</p>
+                  <a href="Assets/docs/SHARON J KEMBOI  CV VF.pdf" class="btn btn-primary">Download my resume</a>
+                  <a href="mailto:example@email.com" class="btn btn-primary">Send me an email</a>
+                </div>
+            </div>
+                <!-- <div class="col">
                     <img class="img-flud about-img" src="images/IMG_9761.jpg" id="sharonimg">
                     <button class="btn btn-secondary view-portfolio" onclick="myFunction();">View my Portfolio secondary</button>
                     <button class="btn btn-danger" onclick="changeImage();">Change My Position</button>
                     <span id="output">replace me</span>
     
-                </div>
+                </div> -->
             </div>
             
         </section>
         <!-- about section end -->
     
-    
+        <section class="container contact-me">
+        <div class="container" id="contact-header">
+            <h2>Contact Me</h2>
+            <p class="text-center text-light">Know where I am from, or leave me a message</p>
+        </div>
+        <div class="row" id="contact-row">
+            <div class="column" id="contact-col1">
+                <div class="mapouter">
+                    <div class="gmap_canvas">
+                        <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=kindaruma&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="column" id="contact-col2">
+                <form action="index.html">
+                    <label for="fname" style="color: white;">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your first name...">
+                    <label for="lname" style="color: white;" >Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+                    <label for="country"  style="color: white;">Country</label>
+                    <select id="contry" name="country">
+                        <option value="Kenya">Kenya</option>
+                        <option value="Tanzania">Tanzania</option>
+                        <option value="Uganda">Uganda</option>
+                        <option value="Zambia">Zambia</option>
+                        <option value="Ghana">Ghana</option>
+                    </select>
+                    <label for="message"  style="color: white;">Message</label>
+                    <textarea id="message" name="message" placeholder="Leave me a message..."></textarea>
+                    <button type="submit" class="btn btn-lg bg-success" style="color: aqua;">Submit</button>
+
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+  
+
     
         <script src="js/script.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
